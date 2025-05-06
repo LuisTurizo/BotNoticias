@@ -4,22 +4,10 @@ from bs4 import BeautifulSoup
 from telegram import Bot
 import os
 
-# Debug: Listar todas las variables disponibles
-print("🚨 Variables disponibles:", list(os.environ.keys()))
-
-# Carga el token con método más seguro
-TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-if not TOKEN:
-    raise ValueError("""
-    🔴 ERROR: Token no encontrado. Verifica que:
-    1. La variable se llame EXACTAMENTE 'TELEGRAM_BOT_TOKEN'
-    2. Hayas reiniciado el despliegue después de cambiarla
-    3. No tenga espacios antes/después
-    """)
-
+# CONFIGURACIÓN DEL BOT
+TOKEN = os.environ.get("TOKEN1")
 MI_CHAT_ID = "1259839619"
 bot = Bot(token=TOKEN)
-print("✅ Bot iniciado correctamente")
 
 # URL de la página de noticias
 URL = 'https://www.uniatlantico.edu.co/noticias/'
