@@ -6,7 +6,7 @@ import os
 
 # CONFIGURACIÓN DEL BOT
 TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
-MI_CHAT_ID = int(os.environ.get('TELEGRAM_CHAT_ID'))
+MI_CHAT_ID = "1259839619"
 bot = Bot(token=TOKEN)
 
 # URL de la página de noticias
