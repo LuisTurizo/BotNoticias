@@ -5,7 +5,7 @@ from telegram import Bot
 import os
 
 # CONFIGURACIÓN DEL BOT
-TOKEN = "8014103057:AAEY3Tk8URzqD_siDbAwuhxjsPUufg_LcsA"
+TOKEN = os.environ['TELEGRAM_BOT_TOKEN']
 MI_CHAT_ID = "1259839619"
 bot = Bot(token=TOKEN)
 
